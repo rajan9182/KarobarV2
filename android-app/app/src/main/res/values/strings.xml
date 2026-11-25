@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Karobar</string>
+    <string name="welcome_heading">Hello World! 👋</string>
+    <string name="welcome_subheading">Welcome to Karobar Mobile Application</string>
+    <string name="security_status">Hardware &amp; Code Integrity Protected</string>
+    <string name="powered_by">Powered by Kotlin • Sneat • Plus Jakarta Sans</string>
+</resources>

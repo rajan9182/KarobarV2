@@ -28,6 +28,17 @@ KarobarV2/
 │   │       └── ProtectedRoute.jsx
 │   └── vite.config.js        # Vite config with API proxy
 │
+├── android-app/              # Native Kotlin Android Application
+│   ├── app/src/main/
+│   │   ├── java/com/karobar/app/
+│   │   │   ├── security/SecurityUtils.kt     # Root, Debugger, Emulator & Anti-tamper checks
+│   │   │   ├── ui/splash/SplashActivity.kt   # 4-sec full-screen video splash + fade transition
+│   │   │   └── ui/main/MainActivity.kt       # Hello World Home Screen (Plus Jakarta Sans)
+│   │   └── res/
+│   │       ├── raw/splash_screen.mp4         # 4-second splash video
+│   │       └── font/plus_jakarta_sans.ttf    # Plus Jakarta Sans brand typography
+│   └── app/proguard-rules.pro                # R8/ProGuard anti-reverse engineering rules
+│
 └── sneat-1.0.0/              # Original Sneat theme template files
 ```
 
@@ -57,6 +68,19 @@ cd frontend
 npm run dev
 ```
 Frontend runs on: **`http://127.0.0.1:5173`**
+
+### 4. Android App (Kotlin Native)
+To build the Android APK:
+```bash
+cd android-app
+
+# Build Debug APK
+./gradlew assembleDebug
+
+# Build Production Obfuscated Release APK (Protected with ProGuard/R8)
+./gradlew assembleRelease
+```
+APKs generated in: `android-app/app/build/outputs/apk/`
 
 ---
 

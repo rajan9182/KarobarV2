@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sneat & Karobar Brand Colors -->
+    <color name="primary">#696CFF</color>
+    <color name="primary_dark">#5F61E6</color>
+    <color name="primary_light">#E7E7FF</color>
+    <color name="accent">#71DD37</color>
+
+    <color name="background_light">#F5F5F9</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="text_primary">#566A7F</color>
+    <color name="text_heading">#233446</color>
+    <color name="text_muted">#A1ACB8</color>
+    <color name="border_color">#D9DEE3</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="security_green">#71DD37</color>
+</resources>
