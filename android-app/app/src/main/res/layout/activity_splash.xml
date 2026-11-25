@@ -1,13 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/white">
 
-    <VideoView
-        android:id="@+id/videoViewSplash"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center" />
+    <!-- Center Branding Container (Blinkit / Zepto Style) -->
+    <LinearLayout
+        android:id="@+id/centerBranding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/footerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46">
 
-</FrameLayout>
+        <!-- Logo Icon Container with Soft Elevation -->
+        <FrameLayout
+            android:id="@+id/logoContainer"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0"
+            android:scaleX="0.75"
+            android:scaleY="0.75">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_karobar_splash_logo" />
+        </FrameLayout>
+
+        <!-- Brand Title & Dot Accent -->
+        <LinearLayout
+            android:id="@+id/brandTitleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:translationY="24dp">
+
+            <TextView
+                android:id="@+id/tvBrandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:letterSpacing="-0.03"
+                android:text="karobar"
+                android:textColor="#1A202C"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/dot_accent" />
+        </LinearLayout>
+
+        <!-- Modern Punchy Tagline -->
+        <TextView
+            android:id="@+id/tvTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:fontFamily="@font/plus_jakarta_sans"
+            android:letterSpacing="0.02"
+            android:text="Smart Commerce. Superfast."
+            android:textColor="#718096"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:translationY="20dp" />
+
+    </LinearLayout>
+
+    <!-- Professional Bottom Footer (Official Trust Badge) -->
+    <LinearLayout
+        android:id="@+id/footerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:alpha="0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:text="🇮🇳  100% Secure Enterprise Platform"
+                android:textColor="#A0AEC0"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

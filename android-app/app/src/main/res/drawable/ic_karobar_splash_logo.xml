@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Premium Rounded Squircle Background with Gradient -->
+    <path
+        android:pathData="M24,4 L72,4 A20,20 0 0,1 92,24 L92,72 A20,20 0 0,1 72,92 L24,92 A20,20 0 0,1 4,72 L4,24 A20,20 0 0,1 24,4 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="315"
+                android:endColor="#4F52E6"
+                android:startColor="#696CFF"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Stylized Modern 'K' Brand Mark -->
+    <!-- Vertical Pillar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,26 H38 V70 H28 Z" />
+
+    <!-- Top diagonal arm of K with arrow hint -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,47 L58,26 H72 L48,49 Z" />
+
+    <!-- Bottom diagonal leg of K with growth accent -->
+    <path
+        android:fillColor="#71DD37"
+        android:pathData="M44,45 L68,70 H54 L35,52 Z" />
+
+</vector>
