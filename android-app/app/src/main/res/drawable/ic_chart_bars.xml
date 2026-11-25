@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="50dp"
+    android:viewportWidth="70"
+    android:viewportHeight="50">
+    <!-- Semi-transparent rising bar chart on Net Sales Card -->
+    <!-- Bar 1 -->
+    <path
+        android:fillColor="#55FFFFFF"
+        android:pathData="M8,36 H14 A3,3 0 0,1 17,39 V48 A2,2 0 0,1 15,50 H10 A2,2 0 0,1 8,48 Z" />
+    <!-- Bar 2 -->
+    <path
+        android:fillColor="#77FFFFFF"
+        android:pathData="M20,28 H26 A3,3 0 0,1 29,31 V48 A2,2 0 0,1 27,50 H22 A2,2 0 0,1 20,48 Z" />
+    <!-- Bar 3 -->
+    <path
+        android:fillColor="#99FFFFFF"
+        android:pathData="M32,22 H38 A3,3 0 0,1 41,25 V48 A2,2 0 0,1 39,50 H34 A2,2 0 0,1 32,48 Z" />
+    <!-- Bar 4 -->
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M44,14 H50 A3,3 0 0,1 53,17 V48 A2,2 0 0,1 51,50 H46 A2,2 0 0,1 44,48 Z" />
+    <!-- Bar 5 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,4 H62 A3,3 0 0,1 65,7 V48 A2,2 0 0,1 63,50 H58 A2,2 0 0,1 56,48 Z" />
+</vector>
